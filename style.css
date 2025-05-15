@@ -1,0 +1,21 @@
+*{
+    border: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    background-color: aquamarine;
+    height: 100vh;
+}
+
+#sobre{
+    width: 100%;
+    background-color: blue;
+    height: 100vh;
+}
+
+#category{
+    width: 100%;
+    background-color:chartreuse;
+    height: 100vh;
+}
