@@ -343,25 +343,22 @@ width: 100%;
 }
 
 #face{
-    width: 9px;
+    width: 19px;
     margin-left: 360px;
     
     
 }
-#twtter{
-    width: 15px;
+#tik{
+    width: 29px;
     margin-left: 15px;
 }
 
-#in{
-    width: 13px;
+#insta{
+    width: 38px;
     margin-left: 15px;
 }
 
-#pinte{
-    width: 10px;
-    margin-left: 15px;
-}
+
 
 #barra{
     padding-left: 18px;
@@ -377,4 +374,24 @@ width: 100%;
     height: 100px;
     background-color: #252525;
     margin-top: 50px;
+}
+
+#barrra{
+    padding-left: 50px;
+    padding-top: 6px;
+    font-size: 60px;
+    color: #007118;
+    
+}
+
+#bb{padding-left: 38px;
+    padding-top: 30px;
+    font-size: x-large;
+}
+
+#bt{
+    padding-left: 500px;
+    padding-top: 30px;
+    font-size: x-large;
+
 }
