@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -149,9 +150,14 @@ width: 100%;
     padding-top: 5px ;
 }
 
+#posto-de-espaco{
+    margin-left: 100px;
+}
+
 #his{
     margin-left: 25px;
     padding-top: 5px ;
+    margin-right: 6%;
 }
 
 #log{
@@ -160,7 +166,7 @@ width: 100%;
 }
 #nav-drop{
     list-style: none;
-    margin-left: 1000px;
+    margin-left: 880px;
     padding-top: 5px ;
 
     
@@ -344,7 +350,7 @@ width: 100%;
 
 #face{
     width: 19px;
-    margin-left: 360px;
+    margin-left: 200px;
     
     
 }
@@ -356,12 +362,20 @@ width: 100%;
 #insta{
     width: 38px;
     margin-left: 15px;
+    align-content: center;
+
+    align-self: center;
 }
 
+#Instagram:hover svg {
+    fill: White;
+    transition: 0.5s;
+}
 
 
 #barra{
     padding-left: 18px;
+    
 }
 
 #b{padding-left: 18px;}
@@ -374,7 +388,9 @@ width: 100%;
     height: 100px;
     background-color: #252525;
     margin-top: 50px;
+      align-items: center;
 }
+
 
 #barrra{
     padding-left: 50px;
