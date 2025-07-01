@@ -14,11 +14,10 @@ Turma 3E1
 - [ ] Tela de esqueceu a senha
 - [ ] Escolha de notificações
 - [ ] Exportação de PDF
-- [ ] Busca eficiente (Assistente virtual)
+- [ ] Busca eficiente 
 - [ ] Sistema de maps
 - [x] Informações em dashBoards
 - [ ] Escolhas na categorias de descartes
-- [ ] Escolha de 
 
 
 
