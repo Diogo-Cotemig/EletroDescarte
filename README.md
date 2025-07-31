@@ -15,7 +15,7 @@ Turma 3E1
 - [ ] Busca eficiente
 - [ ] Pontos de descarte em formato de maps
 - [x] Sistema de maps
-- [ ] Informações em dashBoards
+- [x] Informações em dashBoards
 - [ ] Opções de descarte
 - [ ] Categoria de descartes
 - [ ] Assistência tecnica
