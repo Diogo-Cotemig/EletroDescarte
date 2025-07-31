@@ -10,14 +10,17 @@ Turma 3E1
 - [ ] Cadastro de usuários
 - [ ] Login com autenticação
 - [ ] Multiplos idiomas
-- [ ] Historico do usuário
 - [ ] Tela de esqueceu a senha
-- [ ] Escolha de notificações
-- [ ] Exportação de PDF
-- [ ] Busca eficiente 
-- [ ] Sistema de maps
-- [x] Informações em dashBoards
-- [ ] Escolhas na categorias de descartes
+- [ ] Notificações
+- [ ] Busca eficiente
+- [ ] Pontos de descarte em formato de maps
+- [x] Sistema de maps
+- [ ] Informações em dashBoards
+- [ ] Opções de descarte
+- [ ] Categoria de descartes
+- [ ] Assistência tecnica
+- [ ] Calculo do impacto positivo
+- [ ] Status da coleta
 
 
 
