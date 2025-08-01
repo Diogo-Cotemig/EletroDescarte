@@ -7,21 +7,14 @@ Diogo Rodrigues - 12302678
 Turma 3E1
 
 - [x] Tela Inicial 
-- [x] Cadastro de usuários
-- [x] Login com autenticação
-- [ ] Multiplos idiomas
+- [x] Tela de cadastro de usuários
+- [x] Tela de login com autenticação
 - [x] Tela de esqueceu a senha
-- [ ] Notificações
-- [ ] Busca eficiente
-- [ ] Pontos de descarte em formato de maps
+- [x] Busca eficiente
+- [x] Pontos de descarte em formato de maps
 - [x] Sistema de maps
 - [x] Informações em dashBoards
-- [ ] Opções de descarte
-- [ ] Categoria de descartes
 - [ ] Assistência tecnica
-- [ ] Calculo do impacto positivo
-- [ ] Status da coleta
-
-
+- [ ] Tela de histórico do usuário
 
 
