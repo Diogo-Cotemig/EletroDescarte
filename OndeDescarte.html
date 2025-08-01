@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destino de Descarte</title>
+  <link rel="stylesheet" href="Ondedescarte.css" />
+</head>
+<body>
+
+  <!-- Mapa -->
+  <iframe class="mapa" id="mapFrame" src="" allowfullscreen loading="lazy"></iframe>
+
+  <!-- Conteúdo -->
+  <div class="conteudo">
+    <h2>O que você deseja fazer?</h2>
+    <div class="opcoes">
+      <div class="opcao">Buscar no Local</div>
+      <div class="opcao" onclick="abrirModal()">Ponto de coleta mais próximo</div>
+      <div class="opcao" onclick="abrirRota()">Levar na empresa</div>
+    </div>
+  </div>
+
+  <!-- Modal de seleção de item -->
+  <div class="modal" id="modal">
+    <div class="modal-content" id="modalContent">
+      <button class="close-btn" onclick="fecharModal()">×</button>
+      <h3>Qual item será descartado?</h3>
+      <div class="botoes-itens">
+        <button onclick="mostrarMensagem('Hardware')">Hardware</button>
+        <button onclick="mostrarMensagem('Eletrodomésticos')">Eletrodomésticos</button>
+        <button onclick="mostrarMensagem('Monitores')">Monitores</button>
+        <button onclick="mostrarMensagem('Computador')">Computador</button>
+        <button onclick="mostrarMensagem('Pilhas')">Pilhas</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script>
+    // Obter endereço da URL
+    const params = new URLSearchParams(window.location.search);
+    const endereco = params.get('endereco');
+
+    // Atualizar mapa com base no endereço
+    const mapFrame = document.getElementById('mapFrame');
+    if (endereco) {
+      mapFrame.src = `https://www.google.com/maps?q=${encodeURIComponent(endereco)}&output=embed`;
+    } else {
+      mapFrame.src = "https://www.google.com/maps?q=São+Paulo&output=embed";
+    }
+
+    // Abrir rota no Google Maps
+    function abrirRota() {
+      if (endereco) {
+        const rota = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(endereco)}&travelmode=driving`;
+        window.open(rota, "_blank");
+      } else {
+        alert("Endereço de destino não encontrado.");
+      }
+    }
+  </script>
+<script>
+       // Modal
+    function abrirModal() {
+      document.getElementById("modal").style.display = "flex";
+    }
+
+    function fecharModal() {
+      document.getElementById("modal").style.display = "none";
+      document.getElementById("modalContent").innerHTML = `
+        <button class="close-btn" onclick="fecharModal()">×</button>
+        <h3>Qual item será descartado?</h3>
+        <div class="botoes-itens">
+          <button onclick="mostrarMensagem('Hardware')">Hardware</button>
+          <button onclick="mostrarMensagem('Eletrodomésticos')">Eletrodomésticos</button>
+          <button onclick="mostrarMensagem('Monitores')">Monitores</button>
+          <button onclick="mostrarMensagem('Computador')">Computador</button>
+          <button onclick="mostrarMensagem('Pilhas')">Pilhas</button>
+        </div>
+      `;
+    }
+
+   function mostrarMensagem(item) {
+  let imagens = [];
+
+  switch (item) {
+    case 'Hardware':
+      imagens = [
+        'https://usagif.com/wp-content/uploads/gifs/globe-47.gif',
+        'https://usagif.com/wp-content/uploads/gifs/globe-47.gif'
+      ];
+      break;
+
+    case 'Eletrodomésticos':
+      imagens = [
+         'https://usagif.com/wp-content/uploads/gifs/globe-47.gif',
+          'https://usagif.com/wp-content/uploads/gifs/globe-47.gif',
+          'https://usagif.com/wp-content/uploads/gifs/globe-47.gif'
+      ];
+      break;
+
+    case 'Monitores':
+      imagens = [
+        'https://usagif.com/wp-content/uploads/gifs/globe-47.gif',
+        'https://usagif.com/wp-content/uploads/gifs/globe-47.gif',
+        'https://usagif.com/wp-content/uploads/gifs/globe-47.gif'
+      ];
+      break;
+
+    case 'Computador':
+      imagens = [
+        'https://usagif.com/wp-content/uploads/gifs/globe-47.gif'
+      ];
+      break;
+
+    case 'Pilhas':
+      imagens = [
+        'https://usagif.com/wp-content/uploads/gifs/globe-47.gif',
+        'https://usagif.com/wp-content/uploads/gifs/globe-47.gif'
+      ];
+      break;
+
+    default:
+      imagens = ['https://usagif.com/wp-content/uploads/gifs/globe-47.gif'];
+  }
+
+  const imagemTags = imagens.map(url => `<img src="${url}" alt="${item}" height="200px"; style="max-width: 150px; margin: 10px;">`).join('');
+
+  const content = `
+    <button class="close-btn" onclick="fecharModal()">×</button>
+    <h2>Parabéns pelo descarte de ${item}!</h2>
+    <p style="margin-top: 20px;">Você está contribuindo para um planeta mais limpo 🌱<br>
+    Ao descartar corretamente, você protege o meio ambiente e inspira outros a fazer o mesmo.</br> Essa é a quantidade de terras que seriam gastas em um mundo sem você:</p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">${imagemTags}</div>
+  `;
+
+  document.getElementById("modalContent").innerHTML = content;
+}
+</script>
+
+</body>
+</html>

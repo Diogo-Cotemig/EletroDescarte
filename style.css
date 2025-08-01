@@ -1,12 +1,48 @@
-
-*{
-    margin: 0;
-    box-sizing: border-box;
-}
 header{
-    background-color: #252525;
-    height: 6.0vh;
+    background-color: #000000;
+    height: 9.0vh;
 }
+#linguas 
+{
+padding-left: 10%;
+
+}
+.botao-verde:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+#lingua-btn {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  padding: 0;
+    margin: 0;
+}
+
+#bandeira-br {
+  width: 24px;
+  height: 18px;
+  border-radius: 3px;
+    margin: 0; 
+    vertical-align: middle; 
+}
+
+#seta {
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
 
 #logo{ 
@@ -14,10 +50,139 @@ header{
 }
 
 
+/* Bloqueia o scroll do body quando o modal estiver aberto */
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* Modal base (overlay escuro em tela cheia) */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparente */
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Conteúdo central */
+.modal-content {
+  background-color: #282828 !important; /* fundo escuro */
+  color: white !important;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+/* Botão de fechar (X) */
+.modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Inputs */
+.modal-content input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #3a3a3a !important;
+  color: white;
+  font-size: 14px;
+}
+
+/* Botão principal */
+.btn-verde {
+  background-color: #00b33c;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn-verde:hover {
+  transform: scale(1.05);
+}
+
+
+/* Links abaixo */
+.links {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #00cc66;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.link-btn:hover {
+  color: #00ff88;
+}
+.menu {
+  background-color: #252525;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-left: 3%;
+}
+
+.menu button {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.menu button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00b33c; /* Verde da linha inferior do menu ajustado */
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.menu button:hover::after {
+  transform: scaleX(1);
+}
+
+
+
 #banner{
 width: 100%;
-
-
 
 }
 
@@ -93,7 +258,11 @@ width: 100%;
 
 }
 
+#gmail
+{
+height: 5vh;
 
+}
 
 #gmail>ul{
     
@@ -109,9 +278,11 @@ width: 100%;
 
 #left{
     display: flex;
+    align-items: center;
     position: relative;
-    top: 12px;
+    top: 15%;
     color:#ffffff;
+    background-color:#252525;
  
 }
 
@@ -135,9 +306,17 @@ width: 100%;
     margin-left: 18px;
     padding-left: 18px;
     padding-top: 4px;
-    background-color: #007118;
     width: 140px;
     border-radius: 15px;
+    font-size: 25px;       /* aumenta o tamanho do texto */
+  font-weight: bold;     /* deixa o texto em negrito */
+  color: white;          /* cor do texto */
+  border-radius: 8px;    /* bordas arredondadas */
+  transition: transform 0.3s ease;
+}
+des:hover
+{
+transform: scale(1.1)
 }
 #img2{
  
@@ -148,6 +327,9 @@ width: 100%;
 #ass{
     margin-left: 25px;
     padding-top: 5px ;
+      font-weight: bold;     /* deixa o texto em negrito */
+  color: white;          /* cor do texto */
+  border-radius: 8px;    /* bordas arredondadas */
 }
 
 #posto-de-espaco{
@@ -158,16 +340,27 @@ width: 100%;
     margin-left: 25px;
     padding-top: 5px ;
     margin-right: 6%;
+         
+  font-weight: bold;     /* deixa o texto em negrito */
+  color: white;          /* cor do texto */
+  border-radius: 8px;    /* bordas arredondadas */
 }
 
 #log{
     margin-left: 25px;
     padding-top: 5px ;
+      font-weight: bold;     /* deixa o texto em negrito */
+  color: white;          /* cor do texto */
+  border-radius: 8px;    /* bordas arredondadas */
 }
 #nav-drop{
     list-style: none;
-    margin-left: 880px;
-    padding-top: 5px ;
+    margin-left: 50%;
+    padding-top: 5px;
+    padding-left: 3%;
+    text-align: left;
+    display: flex;
+    align-items: center; /* Garante alinhamento vertical */
 
     
 }
@@ -175,15 +368,38 @@ width: 100%;
 #drop{
     list-style: none;
     padding: 0;
-    background-color: rgb(255, 255, 255);
-    color: #1c1c1c;
+    background-color: #252525;
+   color: #fff;
     position: absolute;
-    width: 90px;
     opacity: 0;
     z-index: -99;
     top: 50px;
     transition: 0.5s;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    width: 130px; 
+    min-width: 130px;
 }
+#drop li {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    cursor: pointer;
+    background: none;
+    color: #fff;
+    border-bottom: 1px solid #333;
+    font-size: 16px;
+    white-space: nowrap; /* impede quebra de linha */
+}
+
+#drop li:last-child {
+    border-bottom: none;
+}
+#drop li:hover {
+    background-color: #007118; /* cor de destaque ao passar o mouse */
+    color: #fff;
+}
+
 
 #nav-drop:hover #drop{
     color: #1c1c1c;
@@ -262,7 +478,7 @@ width: 100%;
 }
 
 #emp{
-    width: 80%;
+    width: 100%;
     font-size: 25px;
 }
 
@@ -341,6 +557,7 @@ width: 100%;
 #cat{
     margin-top: 90px;
     text-align: center;
+    border: 100px;
 }
 
 #ca{
@@ -410,4 +627,169 @@ width: 100%;
     padding-top: 30px;
     font-size: x-large;
 
+}
+
+/* Codigo do Texto */
+#toggle-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#toggle-text {
+    background-color: #007118;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+#toggle-text:hover {
+    background-color: #009c22;
+    transform: scale(1.05);
+}
+
+#more-text {
+    display: inline;
+    white-space: pre-wrap;
+}
+/* Codigo do Texto */
+
+
+/* Codigo do Modal */
+/* Centralização na tela */
+#openModal {
+    width: 50%;
+    max-width: calc(100% - 50px); /* Para manter 25px de margem de cada lado */
+    margin: 0 auto;
+    display: block;
+    margin-top: 100px; /* Ajuste vertical (ou use flex se quiser centralizar na tela toda) */
+    
+    height: 200px;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    background-image: url('sua-imagem.jpg'); /* <- Substitua pela URL da imagem */
+    background-size: cover;
+    background-position: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    background-image: url('foto2.jpg');
+}
+
+/* Efeito hover */
+#openModal:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+
+
+/* Modal */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    animation: fadeIn 0.4s ease;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+/* Animação */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Botão de fechar */
+.close-button {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.close-button:hover {
+    color: #000;
+}
+
+/* Texto */
+.modal-text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo básico para o modal */
+#myModal {
+    display: none; /* Esconde o modal inicialmente */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    overflow: auto;
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+#closeModal {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+#closeModal:hover,
+#closeModal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Bloqueio do scroll do body */
+body.no-scroll {
+    overflow: hidden;
 }

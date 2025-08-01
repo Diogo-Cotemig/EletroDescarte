@@ -1,0 +1,115 @@
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    .mapa {
+      width: 100%;
+      height: 70vh;
+      border: none;
+    }
+
+    .conteudo {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .opcoes {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .opcao {
+      background: #007118;
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      width: 250px;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .opcao:hover {
+      transform: translateY(-5px);
+    }
+
+
+    /* Modal fundo escuro */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* fundo escuro */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Conteúdo do modal */
+.modal-content {
+  background-color: #fff;
+  width: 70%;
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+  animation: aparecer 0.3s ease;
+}
+
+/* Botão de fechar */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Botões de item */
+.botoes-itens {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.botoes-itens button {
+  padding: 12px 20px;
+  background-color: #007118;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.botoes-itens button:hover {
+  background-color: #004f0b;
+}
+
+/* Animação opcional */
+@keyframes aparecer {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

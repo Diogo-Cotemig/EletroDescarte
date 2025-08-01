@@ -9,32 +9,79 @@
      <link id="favicon" rel="icon" href="imagem_2025-06-29_221357449[1].png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        
+
+     <header>
+
         <div id="gmail">
-        <div id="left">
-            <img src="Logo.png" alt="" id="img2"> 
-            <li id="nav-drop"><h2>English</h2>
-                <ul id="drop" >
-                        <li>Spanis</li>
-                        <li>English</li>
-                </ul>
-            </li>
-            
-            <h2 id="log">Logar</h2>
-            <h2 id="ass">Assistencia</h2>
-            <h2 id="his">Historico</h2>
-            <br id="posto-de-espaco">
-            <div id="des">
-                <h2>Descartar</h2>
+            <div id="left">
+                <img src="Logo.png" alt="" id="img2">
+                
+<li id="nav-drop">
+  <button id="lingua-btn">
+    <img src="https://flagcdn.com/w20/br.png" alt="Brasil" id="bandeira-br" />
+    <span id="seta">&#9660;</span>
+  </button>
+  <ul id="drop">
+    <li><img src="https://flagcdn.com/w20/es.png" alt="Espanhol" /> Espanhol</li>
+    <li><img src="https://flagcdn.com/w20/us.png" alt="Inglês" /> Inglês</li>
+  </ul>
+</li>
+                </li>
+
+                <div class="menu">
+                    <button id="log" onclick="openModal()">Logar</button>
+                    <button id="ass">Assistência</button>
+                    <button id="his">Histórico</button>
+                    <button id="des" class="botao-verde">Descartar</button>
+                </div>
             </div>
         </div>
-        <hr id="linha1"/>
-        <hr id="linha2"/>
-        <hr id="linha3"/>
-        <hr id="linha4"/>
-      
-    </header>
+
+  <!-- Modal de Login -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Entrar na sua conta</h2>
+
+      <input type="text" placeholder="Nome de usuário" />
+      <input type="password" placeholder="Senha" />
+
+      <button class="btn-verde">Entrar</button>
+
+      <div class="links">
+        <button class="link-btn" onclick="openRegisterModal()">Não tem uma conta?</button>
+        <button class="link-btn" onclick="openForgotModal()">Esqueceu a senha?</button>
+      </div>
+    </div>
+  </div>
+  <!-- Modal de Cadastro -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeRegisterModal()">&times;</span>
+    <h2>Criar conta</h2>
+    <input type="text" placeholder="Nome de usuário" />
+    <input type="email" placeholder="Email" />
+    <input type="password" placeholder="Senha" />
+    <button class="btn-verde">Cadastrar</button>
+    <div class="links">
+      <button class="link-btn" onclick="openModal()">Já tem uma conta?</button>
+    </div>
+  </div>
+</div>
+<!-- Modal de Recuperação de Senha -->
+<div id="forgotModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeForgotModal()">&times;</span>
+    <h2>Recuperar senha</h2>
+    <input type="email" placeholder="Digite seu email" />
+    <button class="btn-verde">Enviar recuperação</button>
+    <div class="links">
+      <button class="link-btn" onclick="openModal()">Voltar ao login</button>
+    </div>
+  </div>
+</div>
+
+
 
         <img src="Imagem-Pessoas-Servico.png" alt="" id="banner">
         <h2 id="frase">Venha descartar seu <br> eletronico conosco</h2>
@@ -53,27 +100,56 @@
                 <h1 id="h1">Sobre</h1>
                 <hr id="rr">
                 
-                <p id="ppp"> A Eletro-Descarte tem como missão fornecer uma solução eficiente e responsável para o descarte de produtos eletrônicos que, muitas vezes, acabam sendo descartados de forma inadequada, causando poluição e desperdício de recursos valiosos. A empresa oferece um serviço completo de coleta e reciclagem de equipamentos como computadores, celulares e outros aparelhos eletrônicos.
-                    A empresa também tem um compromisso com a educação e a conscientização. A Eletro-Descarte desenvolve programas de sensibilização para consumidores e empresas, mostrando a importância do descarte correto e os benefícios da reciclagem de lixo eletrônico. Além disso, oferece soluções práticas para empresas que desejam adotar práticas sustentáveis em seus processos, com serviços personalizados de coleta e gestão de resíduos eletrônicos.
-                </p>
+                <p id="ppp">
+                    <p id="ppp">
+  <span id="preview-text"></span><span id="more-text"></span>
+  <div id="toggle-container">
+    <button id="toggle-text">Leia mais</button>
+  </div>
+</p>
     
-             </div>
+    </div>
         </div>
 
         <div id="emp">
-            <p id="a">
-                A empresa trabalha lado a lado com fabricantes de equipamentos eletrônicos, oferecendo soluções de descarte responsável. Por meio dessas parcerias, a Eletro-Descarte garante que os produtos de seus parceiros sejam corretamente reciclados ao final de sua vida útil, cumprindo as regulamentações ambientais e contribuindo para a imagem de responsabilidade social dessas marcas.
-            </p>
-            <p id="b">
-                A Eletro-Descarte nasceu da visão de quatro empreendedores apaixonados pela causa ambiental e pela inovação tecnológica: Marco, Pedro, Diogo e Gabriel. Juntos, eles perceberam a crescente quantidade de lixo eletrônico gerado no mercado, e o impacto negativo que esse descarte inadequado poderia causar no meio ambiente e na saúde das pessoas. Foi essa preocupação com o futuro do planeta que os uniu na criação de uma solução sustentável e eficaz para lidar com os resíduos eletrônicos.
-            </p>
-            <p id="c">
-                A ideia de fundar a Eletro-Descarte surgiu em 2025, quando Marco, Pedro, Diogo e Gabriel, cada um com experiências em áreas de empreendorismo, se encontraram em um evento sobre sustentabilidade. Ali, perceberam que havia uma grande oportunidade de unir suas habilidades para criar uma empresa que não apenas reciclasse equipamentos eletrônicos, mas que também fosse uma força transformadora na conscientização e na criação de um ciclo de vida mais sustentável para os produtos eletrônicos.
-            </p>
-            <p id="d">
-                Ao escolher a Eletro-Descarte, você contribui para um futuro mais sustentável, ajudando a reduzir a poluição e promovendo a reutilização de materiais essenciais. A empresa não apenas cuida do lixo eletrônico, mas também da saúde do planeta, garantindo que os resíduos sejam tratados de maneira eficiente e responsável.
+            <!-- Botão de abertura do modal -->
+<button id="openModal">Quem nós somos</button>
 
-            </p>
+<!-- Modal -->
+<div id="myModal" style="display:none;">
+    <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <h2>Quem somos</h2>
+        <p>
+        A empresa trabalha lado a lado com fabricantes de equipamentos eletrônicos, oferecendo soluções de descarte responsável. Por meio dessas parcerias, a Eletro-Descarte garante que os produtos de seus parceiros sejam corretamente reciclados ao final de sua vida útil, cumprindo as regulamentações ambientais e contribuindo para a imagem de responsabilidade social dessas marcas.
+        <br><br>
+        A Eletro-Descarte nasceu da visão de quatro empreendedores apaixonados pela causa ambiental e pela inovação tecnológica: Marco, Pedro, Diogo e Gabriel. Juntos, eles perceberam a crescente quantidade de lixo eletrônico gerado no mercado, e o impacto negativo que esse descarte inadequado poderia causar no meio ambiente e na saúde das pessoas. Foi essa preocupação com o futuro do planeta que os uniu na criação de uma solução sustentável e eficaz para lidar com os resíduos eletrônicos.
+        <br><br>
+        A ideia de fundar a Eletro-Descarte surgiu em 2025, quando Marco, Pedro, Diogo e Gabriel, cada um com experiências em áreas de empreendorismo, se encontraram em um evento sobre sustentabilidade. Ali, perceberam que havia uma grande oportunidade de unir suas habilidades para criar uma empresa que não apenas reciclasse equipamentos eletrônicos, mas que também fosse uma força transformadora na conscientização e na criação de um ciclo de vida mais sustentável para os produtos eletrônicos.
+        <br><br>
+        Ao escolher a Eletro-Descarte, você contribui para um futuro mais sustentável, ajudando a reduzir a poluição e promovendo a reutilização de materiais essenciais. A empresa não apenas cuida do lixo eletrônico, mas também da saúde do planeta, garantindo que os resíduos sejam tratados de maneira eficiente e responsável.
+      </p>
+    </div>
+</div>
+
+
+<div id="modalOverlay" class="modal-overlay">
+  <div class="modal-content">
+    <span class="close-button" id="closeModal">&times;</span>
+    <h2>Quem nós somos</h2>
+    <div class="modal-text">
+      <p>
+        A empresa trabalha lado a lado com fabricantes de equipamentos eletrônicos, oferecendo soluções de descarte responsável. Por meio dessas parcerias, a Eletro-Descarte garante que os produtos de seus parceiros sejam corretamente reciclados ao final de sua vida útil, cumprindo as regulamentações ambientais e contribuindo para a imagem de responsabilidade social dessas marcas.
+        <br><br>
+        A Eletro-Descarte nasceu da visão de quatro empreendedores apaixonados pela causa ambiental e pela inovação tecnológica: Marco, Pedro, Diogo e Gabriel. Juntos, eles perceberam a crescente quantidade de lixo eletrônico gerado no mercado, e o impacto negativo que esse descarte inadequado poderia causar no meio ambiente e na saúde das pessoas. Foi essa preocupação com o futuro do planeta que os uniu na criação de uma solução sustentável e eficaz para lidar com os resíduos eletrônicos.
+        <br><br>
+        A ideia de fundar a Eletro-Descarte surgiu em 2025, quando Marco, Pedro, Diogo e Gabriel, cada um com experiências em áreas de empreendorismo, se encontraram em um evento sobre sustentabilidade. Ali, perceberam que havia uma grande oportunidade de unir suas habilidades para criar uma empresa que não apenas reciclasse equipamentos eletrônicos, mas que também fosse uma força transformadora na conscientização e na criação de um ciclo de vida mais sustentável para os produtos eletrônicos.
+        <br><br>
+        Ao escolher a Eletro-Descarte, você contribui para um futuro mais sustentável, ajudando a reduzir a poluição e promovendo a reutilização de materiais essenciais. A empresa não apenas cuida do lixo eletrônico, mas também da saúde do planeta, garantindo que os resíduos sejam tratados de maneira eficiente e responsável.
+      </p>
+    </div>
+  </div>
+</div>
         </div>
 
         <hr id="lv"/>
@@ -98,6 +174,7 @@
                     </div>  
                 </div>
 
+                
         <div id="categoria">
             <h1 id="cat">Categorias de descarte.</h1>
             <hr id="line">
@@ -123,7 +200,7 @@
                 
             </div>
         </header>
-      
-   
+      <script src="https://unpkg.com/i18next@23.8.1/dist/umd/i18next.min.js"></script>
+    <script src="Script.Js"> </script>
 </body>
 </html>

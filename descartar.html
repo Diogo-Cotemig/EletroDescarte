@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mapa de Descarte</title>
+  <link rel="stylesheet" href="DescartarBtn.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Menu de Descarte</h2>
+      <p>Digite a localização do lixo eletrônico:</p>
+      <input type="text" id="userLocation" placeholder="Ex: Av. Paulista, 1000" />
+      <button onclick="enviarLocalizacao()">Enviar localização</button>
+
+      <h3>Pontos de Coleta:</h3>
+      <ul class="coleta-lista">
+        <li><a href="#" onclick="abrirDestino('R. Santa Cruz, 546 - Barroca, Belo Horizonte - MG, 30431-228')">--- Cotemig, Sou Tech</a></li>
+        <li><a href="#" onclick="abrirDestino('Av. Barão Homem de Melo, 1619 - Nova Granada, Belo Horizonte - MG, 30431-285')">--- Galpão, Barão Homem de Melo, 1619</a></li>
+        <li><a href="#" onclick="abrirDestino('Av. Barão Homem de Melo, 1579 - Nova Granada, Belo Horizonte - MG, 30451-381')">--- Galpão, Barão Homem de Melo, 1579</a></li>
+        <li><a href="#" onclick="abrirDestino('BR-356, 3049 - Belvedere, Belo Horizonte - MG, 30320-900')">--- Shopping, BH Shopping, 3049</a></li>
+      </ul>
+
+      <img id="logoEle" src="logo.png" alt="Logo Eletro Descarte" width="120" />
+    </aside>
+
+    <!-- Mapa -->
+    <section class="map-area" onclick="abrirGoogleMaps()">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.934950606246!2d-46.64820408440617!3d-23.5705683677445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7c44e0a63%3A0x21ff4b302d63e174!2sAv.%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1624139164207!5m2!1spt-BR!2sbr"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+  </div>
+
+  <script>
+    function abrirGoogleMaps() {
+      window.open("https://www.google.com/maps", "_blank");
+    }
+
+   function abrirDestino(endereco) {
+  const url = `OndeDescarte.html?endereco=${encodeURIComponent(endereco)}`;
+  window.open(url, '_blank');
+}
+
+    function enviarLocalizacao() {
+      const local = document.getElementById("userLocation").value;
+      if (local.trim()) {
+        abrirDestino(local);
+      } else {
+        alert("Por favor, insira um endereço.");
+      }
+    }
+  </script>
+</body>
+</html>
