@@ -7,10 +7,10 @@ Diogo Rodrigues - 12302678
 Turma 3E1
 
 - [x] Tela Inicial 
-- [ ] Cadastro de usuários
-- [ ] Login com autenticação
+- [x] Cadastro de usuários
+- [x] Login com autenticação
 - [ ] Multiplos idiomas
-- [ ] Tela de esqueceu a senha
+- [x] Tela de esqueceu a senha
 - [ ] Notificações
 - [ ] Busca eficiente
 - [ ] Pontos de descarte em formato de maps
