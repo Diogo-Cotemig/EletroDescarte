@@ -14,7 +14,7 @@ Turma 3E1
 - [x] Pontos de descarte em formato de maps
 - [x] Sistema de maps
 - [x] Informações em dashBoards
-- [ ] Assistência tecnica
-- [ ] Tela de histórico do usuário
+- [x] Assistência tecnica
+- [x] Tela de histórico do usuário
 
 
