@@ -7,10 +7,6 @@ header{
 padding-left: 10%;
 
 }
-.botao-verde:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s;
-}
 #lingua-btn {
   background: none;
   border: none;
@@ -108,7 +104,7 @@ body.no-scroll {
 /* Botão principal */
 .btn-verde {
   background-color: #00b33c;
-  color: white;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 12px 24px;
   border-radius: 10px;
@@ -302,34 +298,62 @@ height: 5vh;
 
 #b{padding-left: 18px;}
 
+
 #des{
     margin-left: 18px;
     padding-left: 18px;
     padding-top: 4px;
     width: 140px;
     border-radius: 15px;
-    font-size: 25px;       /* aumenta o tamanho do texto */
-  font-weight: bold;     /* deixa o texto em negrito */
-  color: white;          /* cor do texto */
-  border-radius: 8px;    /* bordas arredondadas */
-  transition: transform 0.3s ease;
+    font-size: 25px;     
+    font-weight: bold;     
+    color: white;         
+    transition: transform 0.3s ease;
+    text-decoration: none;
 }
-des:hover
-{
-transform: scale(1.1)
+
+#des:link, 
+#des:visited {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
 }
+
+#des:hover, 
+#des:active { 
+    color: #ffffff;
+}
+
 #img2{
  
  width: 100px;
  margin-left: 15px;
 
 }
+
+
+
 #ass{
     margin-left: 25px;
-    padding-top: 5px ;
-      font-weight: bold;     /* deixa o texto em negrito */
-  color: white;          /* cor do texto */
-  border-radius: 8px;    /* bordas arredondadas */
+    margin-top: 5px;
+    font-weight: bold;
+    margin-right: 6%;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+   
+}
+
+#ass:link, 
+#ass:visited {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#ass:hover, 
+#ass:active { 
+    color: #ffffff;
 }
 
 #posto-de-espaco{
@@ -338,20 +362,31 @@ transform: scale(1.1)
 
 #his{
     margin-left: 25px;
-    padding-top: 5px ;
+    margin-top: 5px;
+    font-weight: bold;
     margin-right: 6%;
-         
-  font-weight: bold;     /* deixa o texto em negrito */
-  color: white;          /* cor do texto */
-  border-radius: 8px;    /* bordas arredondadas */
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+#his:link, 
+#his:visited {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#his:hover, 
+#his:active { 
+    color: #ffffff;
 }
 
 #log{
     margin-left: 25px;
-    padding-top: 5px ;
-      font-weight: bold;     /* deixa o texto em negrito */
-  color: white;          /* cor do texto */
-  border-radius: 8px;    /* bordas arredondadas */
+    font-weight: bold;     /* deixa o texto em negrito */
+    color: white;          /* cor do texto */
+    border-radius: 8px;    /* bordas arredondadas */
 }
 #nav-drop{
     list-style: none;
@@ -432,7 +467,7 @@ transform: scale(1.1)
     position: absolute;
     top: 400px; 
     left: 400px; 
-    color: #252525;
+    color: #ffffff;
     font-size: 24px;
     font-weight: bold;
     background-color: #007118; 
@@ -668,22 +703,21 @@ transform: scale(1.1)
     margin: 0 auto;
     display: block;
     margin-top: 100px; /* Ajuste vertical (ou use flex se quiser centralizar na tela toda) */
-    
+
     height: 200px;
     padding: 20px;
     font-size: 28px;
     font-weight: bold;
-    color: white;
+    color: #007118;
     background-image: url('sua-imagem.jpg'); /* <- Substitua pela URL da imagem */
     background-size: cover;
     background-position: center;
     border: none;
     border-radius: 25px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 20px #494949;
     cursor: pointer;
     transition: transform 0.3s ease, opacity 0.3s ease;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-    background-image: url('foto2.jpg');
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* Efeito hover */

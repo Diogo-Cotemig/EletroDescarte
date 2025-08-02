@@ -1,119 +1,99 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html { height: 100%; font-family: Arial, sans-serif; }
 
-body, html {
-  height: 100%;
-  font-family: Arial, sans-serif;
-}
+    .container {
+      display: flex;
+      height: 100vh;
+    }
 
-/* Layout principal */
-.container {
-  display: flex;
-  height: 100vh;
-}
+    .sidebar {
+      width: 25%;
+      min-width: 280px;
+      background-color: #f1f1f1;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+    }
 
-/* Sidebar */
-.sidebar {
-  width: 25%;
-  min-width: 280px;
-  background-color: #f1f1f1;
-  padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
-}
+    .sidebar h2 {
+      margin-bottom: 20px;
+    }
 
-.sidebar h2 {
-  margin-bottom: 20px;
-}
+    .sidebar label {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
 
-.sidebar input {
-  padding: 10px;
-  width: 100%;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-}
+    .sidebar input {
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
 
-.sidebar button {
-  padding: 10px;
-  background-color: #444;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 30px;
-  transition: background-color 0.3s;
-}
+    .sidebar button {
+      padding: 10px;
+      background-color: #444;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 10px;
+      transition: background-color 0.3s;
+    }
 
-.sidebar button:hover {
-  background-color: #333;
-}
+    .sidebar button:hover {
+      background-color: #333;
+    }
 
-/* Lista dos pontos de coleta */
-.coleta-lista {
-  list-style-type: none;
-  margin-top: 10px;
-  margin-bottom: 40px;
-}
+    .coleta-lista {
+      list-style-type: none;
+      margin-top: 20px;
+    }
 
-.coleta-lista li {
-  margin: 6px 0;
-}
+    .coleta-lista li {
+      margin: 6px 0;
+    }
 
-.coleta-lista a {
-  color: #007118;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.3s;
-}
+    .coleta-lista a {
+      color: #007118;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
 
-.coleta-lista a:hover {
-  color: #004f0b;
-}
+    .coleta-lista a:hover {
+      color: #004f0b;
+    }
 
-/* Logo */
-#logoEle {
-  margin-top: auto;
-}
+    #logoEle {
+      margin-top: auto;
+      width: 120px;
+    }
 
-/* Área do mapa */
-.map-area {
-  width: 75%;
-  height: 100%;
-  position: relative;
-}
+    .map-area {
+      width: 75%;
+      height: 100%;
+      position: relative;
+    }
 
-.map-area iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  cursor: pointer;
-}
+    #map {
+      height: 100%;
+      width: 100%;
+    }
 
-/* Responsivo */
-@media screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
+    #distancia {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      z-index: 1000;
+    }
 
-  .sidebar {
-    width: 100%;
-    height: auto;
-  }
-
-  .map-area {
-    width: 100%;
-    height: 400px;
-  }
-
-  .coleta-lista a {
-    font-size: 16px;
-  }
-
-  .sidebar button {
-    width: 100%;
-  }
-}
+    @media screen and (max-width: 768px) {
+      .container { flex-direction: column; }
+      .sidebar { width: 100%; height: auto; }
+      .map-area { width: 100%; height: 400px; }
+    }
