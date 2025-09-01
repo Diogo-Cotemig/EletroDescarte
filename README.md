@@ -28,7 +28,7 @@ Turma 3E1
 Diogo Rodriguês da Silva - Direção; BackEnd e FrontEnd  - 12302678
 Marco Antônio Mendes Pines - Planejamento; BackEnd e Planilhas - 1230XXXX
 Pedro Henrique de Souza -Organização; Planilha e FrontEnd - 1230XXXX
-Gabriel Henrique Tokonku Navara - Controle de Qualidade; BackEnd e FrontEnd - 1230XXXX
+Gabriel Henrique Silva de Souza- Controle de Qualidade; BackEnd e FrontEnd - 1230XXXX
 
 ## Estrutura de Diretórios (é tipo um Docker: a grosso modo, funciona como Máquina virtual em um sistema, é um contêiner. Põe cada pedaço do sistema em uma máquina virtual diferente)
 
