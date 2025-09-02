@@ -44,6 +44,9 @@ composer global require laravel/installer
 ## Clone o repositório
 git clone https://diogo-cotemig.github.io/EletroDescarte/
 
+
+Caso haja falhas, também tem esse repositorio:
+https://github.com/Diogo-Cotemig/EletroDescartes-Laravel
 ## Instale as dependências (se houver)
 php artisan config:clear
 
