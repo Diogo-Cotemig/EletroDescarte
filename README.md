@@ -52,5 +52,5 @@ NPM Run Dev
 Php Artisan Server
 
 ## Acesso
-URL local: http://localhost:3000
+URL local: [http://localhost:3000](http://127.0.0.1:8000/)
 
