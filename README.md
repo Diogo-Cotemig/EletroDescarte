@@ -1,10 +1,4 @@
-Eletro-Descarte
-Realizado por :
-Gabriel Henrique - 12302961
-Pedro Henrique Moreira - 12303020
-Marco Antônio - 12302260
-Diogo Rodrigues - 12302678
-Turma 3E1
+### <!-- Eletro-Descarte -->
 
 - [x] Tela Inicial 
 - [x] Tela de cadastro de usuários
@@ -17,8 +11,6 @@ Turma 3E1
 - [x] Assistência tecnica
 - [x] Tela de histórico do usuário
 
-# Nome do Projeto
-<!-- Eletro-Descarte -->
 
 ## Descrição
 <!-- Eletro-Descarte é uma empresa com o intuito de combater a poluição da terra devido ao descarte indevido do Lixo eletrônico, nossa empresa acolhe, separa e entrega a matéria prima de volta á empresas que vão reutilizar-las, tudo isso afim de diminuir o consumo excessivo de matéria prima em mineradoras (Ferro, Litio, cobre, ouro) e incentivar ás pessoas a cuidar do futuro da geração, jogando o lixo no local correto -->
