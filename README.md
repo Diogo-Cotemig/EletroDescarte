@@ -27,8 +27,8 @@ Turma 3E1
 <!-- Liste todos os integrantes do grupo no formato Nome - Matrícula -->
 Diogo Rodriguês da Silva - Direção; BackEnd e FrontEnd  - 12302678  \
 Marco Antônio Mendes Pines - Planejamento; BackEnd e Planilhas - 12302260  \
-Pedro Henrique de Souza -Organização; Planilha e FrontEnd - 12303020  \
-Gabriel Henrique Tokonku Navara - Controle de Qualidade; BackEnd e FrontEnd - 12302961  \
+Pedro Henrique - Organização; Planilha e FrontEnd - 12303020  \
+Gabriel Henrique - Controle de Qualidade; BackEnd e FrontEnd - 12302961 \
 
 ## Estrutura de Diretórios (é tipo um Docker: a grosso modo, funciona como Máquina virtual em um sistema, é um contêiner. Põe cada pedaço do sistema em uma máquina virtual diferente)
 
