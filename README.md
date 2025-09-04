@@ -25,10 +25,10 @@ Turma 3E1
 
 ## Integrantes
 <!-- Liste todos os integrantes do grupo no formato Nome - Matrícula -->
-Diogo Rodriguês da Silva - Direção; BackEnd e FrontEnd  - 12302678
-Marco Antônio Mendes Pines - Planejamento; BackEnd e Planilhas - 12302260
-Pedro Henrique de Souza -Organização; Planilha e FrontEnd - 12303020
-Gabriel Henrique Tokonku Navara - Controle de Qualidade; BackEnd e FrontEnd - 12302961
+Diogo Rodriguês da Silva - Direção; BackEnd e FrontEnd  - 12302678  \
+Marco Antônio Mendes Pines - Planejamento; BackEnd e Planilhas - 12302260  \
+Pedro Henrique de Souza -Organização; Planilha e FrontEnd - 12303020  \
+Gabriel Henrique Tokonku Navara - Controle de Qualidade; BackEnd e FrontEnd - 12302961  \
 
 ## Estrutura de Diretórios (é tipo um Docker: a grosso modo, funciona como Máquina virtual em um sistema, é um contêiner. Põe cada pedaço do sistema em uma máquina virtual diferente)
 
@@ -36,10 +36,10 @@ Gabriel Henrique Tokonku Navara - Controle de Qualidade; BackEnd e FrontEnd - 12
 Linguagem/Versão utilizada: Blade, php, Html, Css e JavaScript Dependências necessárias Banco de dados
 
 # 2. Instalação
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-npm install
-install composer
-composer global require laravel/installer
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser  \
+npm install  \
+install composer  \
+composer global require laravel/installer  \
 
 ## Clone o repositório
 git clone https://diogo-cotemig.github.io/EletroDescarte/
