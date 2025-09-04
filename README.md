@@ -29,8 +29,8 @@ Linguagem/Versão utilizada: Blade, php, Html, Css e JavaScript Dependências ne
 
 # 2. Instalação
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser  \
+composer install  \
 npm install  \
-install composer  \
 composer global require laravel/installer  \
 
 ## Clone o repositório
@@ -40,7 +40,8 @@ git clone https://diogo-cotemig.github.io/EletroDescarte/
 Caso haja falhas, também tem esse repositorio:
 https://github.com/Diogo-Cotemig/EletroDescartes-Laravel
 ## Instale as dependências (se houver)
-php artisan config:clear
+composer install  \
+npm install  \
 
 ### Execute o projeto (usar esses codigos ao mesmo tempo)
 NPM Run Dev
