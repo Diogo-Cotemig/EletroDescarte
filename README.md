@@ -1,4 +1,4 @@
-### <!-- Eletro-Descarte -->
+## Eletro-Descarte
 
 - [x] Tela Inicial 
 - [x] Tela de cadastro de usuários
