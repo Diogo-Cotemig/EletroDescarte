@@ -38,7 +38,7 @@ git clone https://diogo-cotemig.github.io/EletroDescarte/
 
 
 Caso haja falhas, também tem esse repositorio:
-https://github.com/Diogo-Cotemig/EletroDescartes-Laravel
+https://diogo-cotemig.github.io/git-test/
 ## Instale as dependências (se houver)
 composer install  \
 npm install 
