@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Destino de Descarte</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    @vite(['resources/css/OndeDescarte.css'])
+    
+    @vite(['resources/css/Ondedescarte.css'])
 </head>
 <body>
 
@@ -41,5 +42,4 @@
     @vite(['resources/js/OndeDescarteJava.js'])
 
 </body>
-
 </html>
