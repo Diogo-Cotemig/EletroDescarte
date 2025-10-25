@@ -178,3 +178,7 @@ ADMINISTRADORES
 'email' => 'Tarzan@hotmail.com.br',
 'password' => bcrypt('87654321'),
 ---
+
+Caso ocorra algum erro no projeto,
+favor usar um clone neste repositorio (somente em casos de erro):
+git clone https://github.com/Diogo-Cotemig/EletroDescartes-Laravel
