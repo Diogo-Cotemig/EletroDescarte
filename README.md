@@ -113,7 +113,6 @@ EletroDescarte/
 │   └── logs/
 └── README.md
 
-
 ## Como Executar o Projeto
 
 ### 1. Pré-requisitos
