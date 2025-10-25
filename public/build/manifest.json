@@ -1,0 +1,16 @@
+{
+  "resources/css/Style.css": {
+    "file": "assets/Style-BnDOLb10.css",
+    "src": "resources/css/Style.css",
+    "isEntry": true,
+    "names": [
+      "Style.css"
+    ]
+  },
+  "resources/js/Script.js": {
+    "file": "assets/Script-8FNxsG7G.js",
+    "name": "Script",
+    "src": "resources/js/Script.js",
+    "isEntry": true
+  }
+}
